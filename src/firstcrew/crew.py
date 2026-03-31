@@ -22,6 +22,7 @@ class Firstcrew():
     def researcher(self) -> Agent:
         return Agent(
             config=self.agents_config['researcher'], # type: ignore[index]
+            llm="anthropic/claude-sonnet-4-20250514",
             verbose=True
         )
 
@@ -29,6 +30,7 @@ class Firstcrew():
     def reporting_analyst(self) -> Agent:
         return Agent(
             config=self.agents_config['reporting_analyst'], # type: ignore[index]
+            llm="anthropic/claude-sonnet-4-20250514",
             verbose=True
         )
 
